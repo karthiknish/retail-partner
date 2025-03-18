@@ -68,6 +68,7 @@ export default function Home() {
         return response.json();
       })
       .then((data) => {
+        window.location.href = "/thank-you";
         // Reset form fields
         setFirstName("");
         setLastName("");
@@ -75,7 +76,6 @@ export default function Home() {
         setEmail("");
         setMessage("");
         setSource("");
-        window.location.href = "/thank-you";
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -971,7 +971,7 @@ export default function Home() {
               <div>
                 <button
                   type="submit"
-                  className="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-red-700 transition-colors w-full md:w-auto"
+                  className="bg-primary cursor-pointer text-white px-6 py-3 rounded-md font-medium hover:bg-red-700 transition-colors w-full md:w-auto"
                   onClick={(e) => {
                     e.preventDefault();
                     handleSubmit();
