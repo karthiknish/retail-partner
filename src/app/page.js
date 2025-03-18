@@ -107,7 +107,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gray-50 py-20 relative h-screen">
         <video
-          autoplay
+          autoPlay
           muted
           style={{ filter: "brightness(0.5)" }}
           className="absolute inset-0 w-full h-full object-cover z-0"
