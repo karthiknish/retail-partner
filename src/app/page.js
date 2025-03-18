@@ -759,6 +759,78 @@ export default function Home() {
                 shops and non-profit retail.
               </p>
             </motion.div>
+            {/* Industry 7 */}
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              className="bg-dark-gray p-6 rounded-lg shadow-md"
+            >
+              <p className=" text-center text-white">
+                Coffee Shop
+                <br />
+                Convenience Store
+                <br />
+                Professional Services
+                <br />
+                Trade Counter
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="bg-dark-gray p-6 rounded-lg shadow-md"
+            >
+              <p className=" text-center text-white">
+                Events & Exhibitioning
+                <br />
+                Arts & Entertainment
+                <br />
+                Food & Catering
+                <br />
+                Contractors & Designers
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="bg-dark-gray p-6 rounded-lg shadow-md"
+            >
+              <p className=" text-center text-white">
+                Manufacturers & Distributors
+                <br />
+                Education & Libraries
+                <br />
+                Medical Dispensaries
+                <br />
+                Specialist Retailers
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="bg-dark-gray p-6 rounded-lg shadow-md"
+            >
+              <p className=" text-center text-white">
+                Ecommerce Warehouse
+                <br />
+                Real Estate
+                <br />
+                Public Sector
+                <br />
+                Garden Centre
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
