@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function ThankYou() {
   // Scroll to top on page load
@@ -13,8 +14,18 @@ export default function ThankYou() {
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="mb-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <motion.div
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="mb-8"
+          >
             <Image
               src="https://theretailfactory.co.uk/wp-content/themes/theretailfactory/assets/images/Logo1.svg"
               alt="The Retail Factory"
@@ -22,33 +33,53 @@ export default function ThankYou() {
               height={80}
               className="mx-auto bg-gray-900 rounded-lg p-2"
             />
-          </div>
+          </motion.div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <motion.h1
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+          >
             Thank You for Contacting Us
-          </h1>
+          </motion.h1>
 
-          <div className="bg-gray-50 p-8 rounded-lg shadow-sm mb-8">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="bg-gray-50 p-8 rounded-lg shadow-sm mb-8"
+          >
             <p className="text-xl text-gray-700 font-primary mb-6">
               We appreciate you reaching out to The Retail Factory. Your message
               has been received, and one of our team members will be in touch
               with you shortly.
             </p>
 
-            <div className="flex items-start justify-center mb-6">
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex items-start justify-center mb-6"
+            >
               <span className="text-green-500 mr-2 text-xl">✔</span>
               <p className="text-gray-700 font-primary text-left">
                 Your form has been successfully submitted
               </p>
-            </div>
+            </motion.div>
 
             <p className="text-gray-600 font-primary">
               If you have any urgent inquiries, please don&apos;t hesitate to
               call us directly.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col md:flex-row justify-center gap-4">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="flex flex-col md:flex-row justify-center gap-4"
+          >
             <Link
               href="/"
               className="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-red-700 transition-colors"
@@ -62,8 +93,8 @@ export default function ThankYou() {
             >
               Send Another Message
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
