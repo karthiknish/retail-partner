@@ -156,7 +156,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-white mb-12 text-center"
+            className="text-4xl font-bold text-white mb-12 text-center"
           >
             Our Solutions
           </motion.h2>
