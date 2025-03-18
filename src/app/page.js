@@ -957,6 +957,8 @@ export default function Home() {
                 <select
                   id="source"
                   name="source"
+                  value={source}
+                  onChange={(e) => setSource(e.target.value)}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-black"
                 >
                   <option value="">Select an option</option>
