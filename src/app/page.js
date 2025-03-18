@@ -68,7 +68,6 @@ export default function Home() {
         return response.json();
       })
       .then((data) => {
-        alert("Thank you for your message. We will be in touch soon!");
         // Reset form fields
         setFirstName("");
         setLastName("");
@@ -76,6 +75,7 @@ export default function Home() {
         setEmail("");
         setMessage("");
         setSource("");
+        window.location.href = "/thank-you";
       })
       .catch((error) => {
         console.error("Error:", error);
