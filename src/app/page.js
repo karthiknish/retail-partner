@@ -9,10 +9,28 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [source, setSource] = useState("");
+  const [error, setError] = useState("");
   const handleSubmit = () => {
     // Validate required fields
-    if (!firstName || !lastName || !email || !phone || !message) {
-      alert("Please fill in all required fields");
+    // Check each field individually and show specific validation messages
+    if (!firstName) {
+      setError("Please enter your first name");
+      return;
+    }
+    if (!lastName) {
+      setError("Please enter your last name");
+      return;
+    }
+    if (!email) {
+      setError("Please enter your email address");
+      return;
+    }
+    if (!phone) {
+      setError("Please enter your phone number");
+      return;
+    }
+    if (!message) {
+      setError("Please enter your message");
       return;
     }
 
@@ -970,6 +988,7 @@ export default function Home() {
                 </select>
               </div>
 
+              {error && <p className="text-red-500 mb-2">{error}</p>}
               <div>
                 <button
                   type="submit"
