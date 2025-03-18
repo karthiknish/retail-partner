@@ -168,12 +168,12 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white p-6 rounded-lg shadow-md relative"
+              className="bg-white p-6 rounded-lg shadow-md relative flex flex-col h-full"
             >
               <h3 className="text-2xl font-semibold mb-4 text-center text-black">
                 Source
               </h3>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 flex-grow">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">✔</span>
                   <span className="text-gray-700 font-primary">
@@ -211,7 +211,7 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-              <div className="text-center">
+              <div className="text-center mt-auto">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

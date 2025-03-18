@@ -43,8 +43,8 @@ export default function ThankYou() {
             </div>
 
             <p className="text-gray-600 font-primary">
-              If you have any urgent inquiries, please don't hesitate to call us
-              directly.
+              If you have any urgent inquiries, please don&apos;t hesitate to
+              call us directly.
             </p>
           </div>
 
