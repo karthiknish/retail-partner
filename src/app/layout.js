@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Retail Partner - Your Trusted Retail Consultancy",
-  description: "Comprehensive retail solutions to help your business thrive in today's competitive market.",
+  description:
+    "Comprehensive retail solutions to help your business thrive in today's competitive market.",
 };
 
 export default function RootLayout({ children }) {
