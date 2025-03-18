@@ -944,7 +944,7 @@ export default function Home() {
       {/* About Us Section */}
       <section className="bg-black text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Column 1 - Logo and Info */}
             <div>
               <div className="mb-4">
