@@ -104,17 +104,6 @@ export default function Home() {
   };
   return (
     <>
-      <nav className="bg-white">
-        <div className="container mx-auto py-4">
-          <Image
-            className="w-1/2 md:w-1/4 mx-auto"
-            src="https://theretailfactory.co.uk/wp-content/themes/theretailfactory/assets/images/Logo%202.svg"
-            alt="logo"
-            width={100}
-            height={100}
-          />
-        </div>
-      </nav>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="bg-gray-50 py-20 relative h-screen">

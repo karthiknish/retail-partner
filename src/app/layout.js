@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Retail Partner - Your Trusted Retail Consultancy",
+  title: "Visual Merchandiser by The Retail Factory",
   description:
     "Comprehensive retail solutions to help your business thrive in today's competitive market.",
 };
