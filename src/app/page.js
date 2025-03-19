@@ -363,7 +363,7 @@ export default function Home() {
                   transition={{ duration: 0.7 }}
                 >
                   <h2 className="text-4xl font-bold mb-6">
-                    Visual Merchandiser by TRF
+                    Visual Merchandiser by Retail Factory
                   </h2>
                   <p className="mb-4">
                     We provide a unique source, store, deliver service to
@@ -520,8 +520,8 @@ export default function Home() {
                 </div>
 
                 <p className="text-gray-700 font-bold font-primary mt-6">
-                  The Visual Merchandiser by TRF makes sourcing, storing, and
-                  delivering essential retail and restaurant products
+                  Visual Merchandiser by Retail Factory makes sourcing, storing,
+                  and delivering essential retail and restaurant products
                   hassle-free, cost-effective, and efficient.
                 </p>
               </motion.div>
@@ -721,7 +721,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2 text-primary text-center">
                   Supermarkets
                 </h3>
-                <p className="text-gray-600 font-primary text-center text-white">
+                <p className=" font-primary text-center text-white">
                   Comprehensive retail solutions for grocery and supermarket
                   environments.
                 </p>
@@ -748,7 +748,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2 text-primary text-center">
                   Leisure & Hospitality
                 </h3>
-                <p className="text-gray-600 font-primary text-center text-white">
+                <p className="font-primary text-center text-white">
                   Specialized products and fixtures for hotels, resorts, and
                   leisure facilities.
                 </p>
